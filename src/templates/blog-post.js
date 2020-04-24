@@ -5,6 +5,7 @@ import { TimeFive } from '@styled-icons/boxicons-regular/TimeFive'
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
+import Comments from '../components/Comments'
 
 import * as S from "../components/Post/styled"
 
@@ -16,6 +17,7 @@ export const query = graphql`
                 date(formatString: "LL", locale: "pt-br")
                 description
             }
+            fields { slug }
             timeToRead
             html
         }
@@ -50,6 +52,7 @@ const BlogPost = ({ data, pageContext }) => {
             </S.MainContent>
 
             <RecommendedPosts next={next} previous={previous} />
+            <Comments url={post.fields.slug} title={post.frontmatter.title} />
         </Layout>
     )
 }

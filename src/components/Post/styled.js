@@ -62,7 +62,7 @@ iframe,
 .button-post {
     color: #fff;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;

@@ -18,14 +18,14 @@ export const ProfileLink = styled(Link)`
 `
 
 export const ProfileAuthor = styled.h1`
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin: 0.75rem auto 2rem;
 `
 
 export const ProfilePosition = styled.small`
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.075rem;
     font-weight: 400;
     margin: 0.15rem auto;
 `

@@ -1,3 +1,7 @@
+require("dotenv").config()
+
+const queries = require('./src/utils/algolia-queries')
+
 module.exports = {
   siteMetadata: {
     title: `Vinícius Cardoso`,
@@ -51,7 +55,7 @@ module.exports = {
         fonts: [
           {
             family: `Oxygen`,
-            variants: [`300`, `400`, `700`]
+            variants: [`400`, `700`]
           }
         ],
         display: 'swap'
@@ -81,10 +85,16 @@ module.exports = {
         ]
       }
     },
-
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`
+    {
+      resolve: `gatsby-plugin-algolia-search`,
+      options: {
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 10000,
+        enablePartialUpdates: true, // default: false
+      },
+    },
   ]
 }

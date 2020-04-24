@@ -19,7 +19,7 @@ export const query = graphql`
                         description
                         title
                     }
-                    timeToRead,
+                    timeToRead
                     fields { slug }
                 }
             }
