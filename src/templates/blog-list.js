@@ -45,7 +45,7 @@ const BlogList = props => {
                     fields: { slug }
                 }
             }) => (
-                    <PostItem
+                    <PostItem key={slug}
                         slug={slug}
                         background={background}
                         category={category}

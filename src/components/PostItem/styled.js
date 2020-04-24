@@ -15,7 +15,7 @@ export const PostItemWrapper = styled.section`
     align-items: center;
     border-bottom: 1px solid #38444d;
     display: flex;
-    padding: 2rem 3rem;
+    padding: 2rem 2.5rem;
     width: 100%;
 `
 
@@ -44,7 +44,7 @@ export const PostItemDate = styled.time`
 `
 
 export const PostItemTitle = styled.h1`
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 0.2rem 0 0.5rem;
 `

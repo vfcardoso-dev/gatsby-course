@@ -35,8 +35,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Fira Sans`,
-            variants: [`400`, `700`]
+            family: `Oxygen`,
+            variants: [`300`, `400`, `700`]
           }
         ],
         display: 'swap'
