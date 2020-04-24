@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 export const MenuLinksWrapper = styled.nav``
 
 export const MenuLinksList = styled.ul`
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 400;
 `
 
 export const MenuLinksItem = styled.li`

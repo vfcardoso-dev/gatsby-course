@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Icons from './Icons'
+import icons from './icons'
 import links from './content'
 
 import * as S from './styled'
@@ -9,12 +9,12 @@ const SocialLinks = () => (
     <S.SocialLinksWrapper>
         <S.SocialLinksList>
             {links.map((link, i) => {
-                const Icon = Icons[link.label];
+                const Icon = icons[link.label];
 
                 return (
                     <S.SocialLinksItem key={i}>
                         <S.SocialLinksLink
-                            to={link.url}
+                            href={link.url}
                             title={link.label}
                             target="_blank"
                             rel="noopener noreferrer"
