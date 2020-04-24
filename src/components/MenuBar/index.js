@@ -44,7 +44,8 @@ const MenuBar = () => {
                 </S.MenuBarItem>
                 <S.MenuBarItem
                     title="Alternar entre grid e lista"
-                    onClick={() => { window.__setPreferredDisplay(isListMode ? 'grid' : 'list') }}>
+                    onClick={() => { window.__setPreferredDisplay(isListMode ? 'grid' : 'list') }}
+                    className="display">
                     {isListMode ? <Grid /> : <ListUl />}
                 </S.MenuBarItem>
                 <S.MenuBarItem title="Ir para o topo"><Arrow /></S.MenuBarItem>
