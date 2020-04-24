@@ -20,10 +20,30 @@ font-weight: 200;
 padding: 0 1.4rem;
 `
 
+export const PostTimeInfoWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+`
+
+export const PostDateWrapper = styled.div``
+
 export const PostDate = styled.p`
-font-size: 1rem;
-font-weight: 100;
-padding: 0 1.4rem;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0 1.4rem;
+`
+
+export const PostTimeToReadWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0 1.4rem 0 0;
+`
+
+export const PostTimeToRead = styled.span`
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 0.5rem;
 `
 
 export const MainContent = styled.section`

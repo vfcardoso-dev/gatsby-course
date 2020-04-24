@@ -2,7 +2,6 @@
 title: Mussum Ipsum o melhor ipsum do mundis
 description: 'Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi'
 date: '2019-08-22 08:51:23'
-image: /assets/img/mussum-ipsum.jpg
 category: jekyll
 background: '#B31917'
 ---
@@ -13,6 +12,8 @@ Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, sou pre
 A ordem dos tratores não altera o pão duris. Viva Forevis aptent taciti sociosqu ad litora torquent. Delegadis gente finis, bibendum egestas augue arcu ut est. Atirei o pau no gatis, per gatis num morreus.
 
 Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Quem num gosta di mé, boa gentis num é.
+
+![Foto de um deserto](/assets/img/desert.jpg)
 
 ### Nois bebis
 

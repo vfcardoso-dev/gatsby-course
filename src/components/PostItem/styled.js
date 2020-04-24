@@ -15,7 +15,7 @@ export const PostItemWrapper = styled.section`
     align-items: center;
     border-bottom: 1px solid #38444d;
     display: flex;
-    padding: 2rem 2.5rem;
+    padding: 1.87rem 2.87rem;
     width: 100%;
 `
 
@@ -39,7 +39,16 @@ export const PostItemInfo = styled.div`
     margin-left: 1.5rem;
 `
 
+export const PostItemTimeInfoWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
 export const PostItemDate = styled.time`
+    font-size: 0.8rem;
+`
+
+export const PostItemTimeToRead = styled.div`
     font-size: 0.8rem;
 `
 
