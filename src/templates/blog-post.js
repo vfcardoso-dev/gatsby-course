@@ -16,6 +16,7 @@ export const query = graphql`
                 title
                 date(formatString: "LL", locale: "pt-br")
                 description
+                image
             }
             fields { slug }
             timeToRead
@@ -31,7 +32,11 @@ const BlogPost = ({ data, pageContext }) => {
 
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} />
+            <SEO
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+                image={post.frontmatter.image}
+            />
             <S.PostHeader>
                 <S.PostTimeInfoWrapper>
                     <S.PostDateWrapper>
@@ -43,7 +48,9 @@ const BlogPost = ({ data, pageContext }) => {
                         <S.PostTimeToRead>{post.timeToRead} min de leitura</S.PostTimeToRead>
                     </S.PostTimeToReadWrapper>
                 </S.PostTimeInfoWrapper>
+
                 <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
+
                 <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
             </S.PostHeader>
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 
 export const MenuBarWrapper = styled.aside`
@@ -15,10 +15,11 @@ export const MenuBarWrapper = styled.aside`
     position: fixed;
     right: 0;
     width: 3.25rem;
-    transition: background 0.5s;
+    transition: all 0.5s ease 0s;
 
     ${media.lessThan("large")`
         border-top: 1px solid var(--borders);
+        border-left: none;
         bottom: 0;
         flex-direction: row;
         height: auto;
@@ -37,7 +38,7 @@ export const MenuBarGroup = styled.div`
     `}
 `
 
-export const MenuBarLink = styled(Link)`
+export const MenuBarLink = styled(AniLink)`
     display: block;
 
     &.active {

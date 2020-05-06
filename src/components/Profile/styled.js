@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import media from "styled-media-query"
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const ProfileWrapper = styled.section`
     color: var(--texts);
@@ -8,7 +8,7 @@ export const ProfileWrapper = styled.section`
     flex-direction: column;
 `
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(AniLink)`
     color: var(--texts);
     text-decoration: none;
     transition: 'color 0.5s';
@@ -24,9 +24,9 @@ export const ProfileLink = styled(Link)`
 `
 
 export const ProfileAuthor = styled.h1`
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     font-weight: 500;
-    margin: 0.75rem auto 2rem;
+    margin: 1.75rem auto 2rem;
 
     ${media.lessThan("large")`
         font-size: 1.2rem;
@@ -37,9 +37,9 @@ export const ProfileAuthor = styled.h1`
 
 export const ProfilePosition = styled.small`
     display: block;
-    font-size: 1.075rem;
+    font-size: 1rem;
     font-weight: 400;
-    margin: 0.15rem auto;
+    margin: 0.35rem auto 0.15rem;
 
     ${media.lessThan("large")`
         font-size: 0.8rem;

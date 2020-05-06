@@ -42,6 +42,8 @@ export const PostTimeInfoWrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 2.15rem;
+    color: var(--texts)
     `
 
 export const PostDateWrapper = styled.div``
@@ -90,9 +92,9 @@ export const MainContent = styled.section`
     .button-post {
         color: var(--postColor);
         font-size: 1.25rem;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.7;
-        letter-spacing: 0.069rem;
+        letter-spacing: 0.059rem;
         padding: 0 1.4rem;
         
         ${media.lessThan("large")`

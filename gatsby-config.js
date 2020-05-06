@@ -5,9 +5,10 @@ const queries = require('./src/utils/algolia-queries')
 module.exports = {
   siteMetadata: {
     title: `Vinícius Cardoso`,
-    position: `Software Developer`,
+    position: `Fullstack Web Developer`,
     description: `Sou desenvolvedor de software, músico e nerd. Este é um espaço que mantenho para falar das coisas que gosto.`,
     author: `@vfcardoso_`,
+    siteUrl: `https://vfcardoso.dev`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,13 +40,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `vfcardoso-dev`,
+        short_name: `vfcardoso-dev`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/avatar-masked.png`, // This path is relative to the root of the site.
       }
     },
     `gatsby-plugin-styled-components`,
@@ -54,8 +55,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Oxygen`,
-            variants: [`400`, `700`]
+            family: `Roboto`,
           }
         ],
         display: 'swap'
@@ -93,8 +93,11 @@ module.exports = {
         indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
         chunkSize: 10000,
-        enablePartialUpdates: true, // default: false
+        enablePartialUpdates: true
       },
     },
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`
   ]
 }

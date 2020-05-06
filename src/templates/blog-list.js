@@ -6,9 +6,6 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
-import * as S from '../components/ListWrapper/styled'
-
-
 export const query = graphql`
     query ($limit: Int!, $skip: Int!) {
         allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: $limit, skip: $skip) {
@@ -40,25 +37,23 @@ const BlogList = props => {
     return (
         <Layout>
             <SEO title="Home" />
-            <S.ListWrapper>
-                {postList.map(({
-                    node: {
-                        frontmatter: { background, category, date, title, description },
-                        timeToRead,
-                        fields: { slug }
-                    }
-                }) => (
-                        <PostItem key={slug}
-                            slug={slug}
-                            background={background}
-                            category={category}
-                            date={date}
-                            timeToRead={timeToRead}
-                            title={title}
-                            description={description}
-                        />
-                    ))}
-            </S.ListWrapper>
+            {postList.map(({
+                node: {
+                    frontmatter: { background, category, date, title, description },
+                    timeToRead,
+                    fields: { slug }
+                }
+            }) => (
+                    <PostItem key={slug}
+                        slug={slug}
+                        background={background}
+                        category={category}
+                        date={date}
+                        timeToRead={timeToRead}
+                        title={title}
+                        description={description}
+                    />
+                ))}
             <Pagination
                 isFirst={isFirst}
                 isLast={isLast}
