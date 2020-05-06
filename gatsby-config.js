@@ -98,6 +98,7 @@ module.exports = {
     },
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`
   ]
 }
