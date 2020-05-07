@@ -1,8 +1,8 @@
 backend:
     name: github
     branch: master
-    repo: vfcardoso-dev/vfcardoso-blog
-    site_domain: "https://vfcardoso-blog.netlify.app"
+    repo: vfcardoso-dev/gatsby-blog
+    site_domain: "https://vfcardoso-gatsby-blog.netlify.app"
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"

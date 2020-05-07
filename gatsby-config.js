@@ -8,7 +8,7 @@ module.exports = {
     position: `Fullstack Web Developer`,
     description: `Sou desenvolvedor de software, músico e nerd. Este é um espaço que mantenho para falar das coisas que gosto.`,
     author: `@vfcardoso_`,
-    siteUrl: `https://vfcardoso.dev`
+    siteUrl: `https://vfcardoso-gatsby-blog.netlify.app`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `vfcardoso-dev`,
-        short_name: `vfcardoso-dev`,
+        name: `vfcardoso-blog`,
+        short_name: `vfcardoso-blog`,
         start_url: `/`,
         background_color: `#16202c`,
         theme_color: `#16202c`,

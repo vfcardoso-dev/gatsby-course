@@ -1,7 +1,7 @@
 {
-  "name": "vfcardoso-dev",
+  "name": "vfcardoso-blog",
   "private": true,
-  "description": "Website do programador Vinícius Cardoso",
+  "description": "A simple blog study made with gatsby",
   "version": "0.1.0",
   "author": "Vinícius Cardoso <vfcardoso3@gmail.com>",
   "dependencies": {
