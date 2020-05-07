@@ -3,6 +3,7 @@ backend:
     branch: master
     repo: vfcardoso-dev/gatsby-blog
     site_domain: "https://vfcardoso-gatsby-blog.netlify.app"
+    api_root: https://api.github.com
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
