@@ -5,13 +5,13 @@ import PropTypes from 'prop-types'
 import * as S from './styled'
 
 const Comments = ({ url, title }) => {
-    const fullURL = `https://vfcardoso.dev${url}`
+    const fullURL = `https://vfcardoso-gatsby-blog.netlify.app${url}`
 
     return (
         <S.CommentsWrapper>
             <S.CommentsTitle>Comentários</S.CommentsTitle>
             <ReactDisqusComments
-                shortname="vfcardoso-dev"
+                shortname="vfcardoso-gatsby-blog"
                 identifier={fullURL}
                 title={title}
                 url={fullURL}

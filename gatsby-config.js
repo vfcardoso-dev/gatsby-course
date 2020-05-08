@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `vfcardoso-blog`,
-        short_name: `vfcardoso-blog`,
+        name: `vfcardoso-gatsby-blog`,
+        short_name: `vfcardoso-gatsby-blog`,
         start_url: `/`,
         background_color: `#16202c`,
         theme_color: `#16202c`,
