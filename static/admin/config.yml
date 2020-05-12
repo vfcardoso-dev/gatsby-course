@@ -1,8 +1,8 @@
 backend:
     name: git-gateway
     branch: master
-    repo: vfcardoso-dev/gatsby-blog
-    site_domain: "https://vfcardoso-gatsby-blog.netlify.app"
+    repo: vfcardoso-dev/gatsby-course
+    site_domain: "https://vfcardoso-gatsby-course.netlify.app"
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"

@@ -8,7 +8,7 @@ module.exports = {
     position: `Fullstack Web Developer`,
     description: `Sou desenvolvedor de software, músico e nerd. Este é um espaço que mantenho para falar das coisas que gosto.`,
     author: `@vfcardoso_`,
-    siteUrl: `https://vfcardoso-gatsby-blog.netlify.app`
+    siteUrl: `https://vfcardoso-gatsby-course.netlify.app`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
